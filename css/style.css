@@ -1,0 +1,223 @@
+section {
+    display: block;
+  }
+  
+  body {
+    line-height: 1;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  blockquote,
+  q {
+    quotes: none;
+  }
+  
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* testimonials */
+  
+  #testimonials {
+    width: 100%;
+  }
+  #testimonials h2 {
+    margin-left: 90px;
+  }
+  #testimonials .container .row {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  #testimonials .container .row .card1 {
+    width: 50vh;
+    height: 70vh;
+    border-radius: 0;
+    padding: 0;
+    background-image: url("/images/Rectangle 46.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  #testimonials .container .row .card1 p {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  #testimonials .container .row .card2 {
+    width: 50vh;
+    height: 70vh;
+    border-radius: 0;
+    padding: 0;
+    background-image: url("/images/Rectangle\ 45.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  #testimonials .container .row .card2 p {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  #testimonials .container .row .center {
+    width: 80vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #testimonials .container .row .center .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+  }
+  #testimonials .container .row .center .content .image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("/images/Ellipse\ 9.png");
+    background-size: cover;
+  }
+  #testimonials .container .row .center .content .text {
+    text-align: center;
+    width: 70%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #testimonials .container .row .center .content .text p {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  #testimonials .container .row .center .content hr {
+    height: 1px;
+    width: 5rem;
+  }
+  #testimonials .container .row .center .content .name {
+    font-weight: 600;
+  }
+
+  /* end testimonials  */
+
+  /* gallary */
+  .gallery h2 {
+    margin-top: 80px;
+    margin-left: 90px;
+  }
+  .gallery .container {
+    width: 100%;
+  }
+  .gallery .container .row {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .gallery .container .row {
+    margin-top: 20px;
+    margin-right: 80px;
+  }
+  .row img{
+    opacity: 1;
+  }
+  .row img:hover{
+    opacity: 0;
+  }
+  /* end gallary */
+  
+  /*
+  M E D I A  Q U E R I E S
+  */
+ 
+  @media (min-width: 768px) {
+    #profile {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #profile .container .row {
+      gap: 0;
+    }
+    #profile .container .row .card1 {
+      height: 40vh;
+    }
+    #profile .container .row .center {
+      height: 40vh;
+    }
+    #profile .container .row .center .content {
+      gap: 0;
+    }
+    #profile .container .row .center .content .text {
+      margin: 0;
+      padding: 0;
+    }
+    #profile .container .row .center .content .text p {
+      line-height: 20px;
+    }
+    #profile .container .row .center .content hr {
+      margin: 0;
+      padding: 0;
+    }
+    #profile .container .row .card2 {
+      height: 40vh;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    #profile {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #profile .container .row .card1 {
+      height: 70vh;
+    }
+    #profile .container .row .card2 {
+      height: 70vh;
+    }
+    #profile .container .row .center {
+      height: 70vh;
+    }
+    #profile .container .row .center .content {
+      gap: 0rem;
+      width: 90%;
+    }
+    #profile .container .row .center .content .text {
+      padding-top: 10px;
+    }
+    #profile .container .row .center .content .text p {
+      line-height: 30px;
+    }
+    #profile .container .row .center .content hr {
+      padding: 10px;
+    }
+  }
